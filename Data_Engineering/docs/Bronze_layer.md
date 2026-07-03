@@ -1,13 +1,13 @@
 # Bronze Layer - API Ingestion (Databricks + PySpark)
 
-## 📌 Overview
+## Overview
 This module is responsible for ingesting raw data from REST APIs into the Bronze layer of a Medallion Architecture pipeline using PySpark in Databricks.
 
 The data is stored in Delta tables with minimal transformation, following the Bronze layer principle of keeping data as close to source as possible.
 
 ---
 
-## ⚙️ Role in Overall Architecture
+## Role in Overall Architecture
 
 This is the **Bronze ingestion layer** of a multi-stage pipeline:
 
@@ -15,7 +15,7 @@ API → Bronze Layer (this module) → Silver Layer → Gold Layer
 
 ---
 
-## 📊 Data Sources
+## Data Sources
 ### CRM APIs
 - customers
 - products
@@ -28,7 +28,7 @@ API → Bronze Layer (this module) → Silver Layer → Gold Layer
 
 ---
 
-## 🧪 What This Layer Does
+## What This Layer Does
 
 - Extracts data from REST APIs
 - Loads raw data into Delta Lake (Bronze tables)
@@ -42,7 +42,7 @@ API → Bronze Layer (this module) → Silver Layer → Gold Layer
 
 ---
 
-## 🧱 Storage Design
+## Storage Design
 
 - Format: Delta Lake
 - Mode: Append-only
@@ -51,7 +51,7 @@ API → Bronze Layer (this module) → Silver Layer → Gold Layer
 
 ---
 
-## 📁 Output Tables
+## Output Tables
 
 - bronze.crm_customers
 - bronze.crm_products
@@ -61,7 +61,7 @@ API → Bronze Layer (this module) → Silver Layer → Gold Layer
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 - PySpark (Databricks)
 - Delta Lake
